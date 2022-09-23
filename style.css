@@ -1,0 +1,65 @@
+body{
+    display: flex;
+}
+.left{
+    width: 50%;
+    background-color:teal;
+    min-height: 100vh;
+}
+
+.right{
+    width: 50%;
+    background-color: azure;
+    min-height: 100vh;
+
+}
+
+.rocket-icon{
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    left: 70%;
+    transition: bottom 3000ms;
+}
+
+
+body.state3 .rocket-icon{
+    bottom: 1000px;
+}
+
+
+div.state1,div.state2,div.state3{
+    width: 300px;
+    margin: 20% auto;
+    background-color: white;
+    /* box-shadow: 0 0 10px gray; */
+    border-radius: 7px;
+    padding: 15px;
+    -webkit-box-shadow: -7px 2px 44px 0px rgba(255,255,255,1);
+-moz-box-shadow: -7px 2px 44px 0px rgba(255,255,255,1);
+box-shadow: -7px 2px 44px 0px rgba(255,255,255,1);
+text-align: center;
+display: none;
+}
+
+.state1 a,.state2 a,.state3 a {
+    background: teal;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+body.state1 div.state1{
+    display: block;
+}
+
+body.state2 div.state2{
+    display: block;
+}
+
+body.state3 div.state3{
+    display: block;
+}

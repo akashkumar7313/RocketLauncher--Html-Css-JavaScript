@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/rocket.svg">
+    <title>Rocket Launcher - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="state1">
+    <div class="left">
+      <div class="state1">
+        <h1>Ready</h1>
+        <a href="#" onclick="changeState(2)">Launch</a>
+      </div>
+
+      <div class="state2">
+        <h1 id="timer-counter">10</h1>
+        <a href="#" onclick="changeState(1)">Abort</a>
+      </div>
+
+      <div class="state3">
+        <h1>Success</h1>
+        <a href="#" onclick="changeState(1)">Launch Again</a>
+
+      </div>
+    </div>
+    <div class="right">
+      <img src="rocket.png" class="rocket-icon" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
